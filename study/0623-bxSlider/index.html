@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bxSlider</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+  <style>
+    *{margin: 0;padding: 0;}
+    body{font:17px 'Nanum Gothic';}
+    .bx-wrapper{width: 700px; margin: 0 auto; border: none;}
+    li{list-style: none;}
+  </style>
+  <script>
+    $(document).ready(function(){
+      $('.bxslider').bxSlider({
+        auto: true, //자동으로 애니메이션 시작
+        speed: 500, //애니메이션 속도
+        pause: 3000, //애니메이션 유지 시간 (1000은 1초)
+        mode: 'horizontal', //슬라이드 모드('fade', 'horizontal', 'vertical' 이 있음)
+        autoControls: false, //시작 및 중지버튼 보여짐
+        pager: true, //페이지 표시 보여짐
+        captions: true //이미지 위에 텍스트를 넣을 수 있음
+      });
+    });
+  </script>
+</head>
+<body>
+  <ul class="bxslider">
+    <li>
+      <a href="#"><img src="images/img1.jpg" alt="이미지1" title="이미지1" ></a>
+    </li>
+    <li>
+      <a href="#"><img src="images/img2.jpg" alt="이미지2" title="이미지2" ></a>
+    </li>
+    <li>
+      <a href="#"><img src="images/img3.jpg" alt="이미지3" title="이미지3" ></a>
+    </li>
+  </ul>
+</body>
+</html>

@@ -1,0 +1,89 @@
+:root {
+  --text-color: #faf4f5;
+  --background-color: #263343;
+  --accent-color:#d49466;
+}
+
+body {margin: 0; font-family: 'Source Sans Pro', sans-serif;}
+a { text-decoration: none; color: #fff;}
+/* a { color: var(--text-color)} */
+
+.navbar {
+  display: flex;
+  background:#263343;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+}
+.navbar .logo {
+  font-size: 24px;
+  color: #fff;
+}
+.navbar .logo i {
+  color: #d49466;
+}
+
+.navbar .menu {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+  /* li가 갖고 있는 기본 패딩 초기화 */
+}
+.navbar .menu li {
+  padding: 8px 12px;  
+}
+.navbar .menu li:hover {
+  background:#d49466;
+  border-radius: 4px;  
+}
+
+.navbar .sns {
+  list-style: none;  
+  display: flex;
+  color: #fff;
+  padding-left: 0;
+}
+.navbar .sns li {
+  padding: 8px 12px;  
+}
+
+.tooglebtn {
+  display: none;
+  position: absolute;
+  right: 32px;
+  font-size: 24px;
+  color: #d49466;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+  }
+
+  .navbar .menu  {
+    flex-direction: column;
+    align-items: center; /* 반대축기준 정렬 방식 */
+    width: 100%;        /* 메뉴너비를 조정해줘야 중간으로 오게됨 */
+    display: none;
+  }
+  .navbar .menu li {
+    width: 100%;
+    /* 너비가 100%이면 텍스트는 자동으로 왼쪽으로 정렬되는 성질을 갖고 있음 */
+    text-align: center;
+  }
+  .navbar .sns {
+    /* flex 방향을 바꾸지 않고 가운데로 배치해야함 */
+    justify-content: center; /* 주축의 중앙으로 배치 */
+    width: 100%;
+    display: none;
+  }
+  .tooglebtn {
+    display: block;
+  }
+
+  .navbar .menu.active, .navbar .sns.active {
+    display: flex;
+  }
+}

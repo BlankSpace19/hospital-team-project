@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>쿠키 생성</title>
+  <script>
+    /* 
+      document.cookie = 'Name=값; Value= 값; Expires= 값'
+      날짜 추출(반환) date.getDate() =>p92(내장객체)
+      날짜 지정 date.setDate(새로운 날짜) ==> GMT방식으로 저장(사람이 보기 편한 방식)
+    */
+    let date = new Date();
+    //console.log(date);
+    //console.log(date.getDate() + 7); //일주일 후의 날로 지정
+
+    date.setDate(date.getDate() + 7) //일주일 후의 날로 지정
+    //console.log(date);
+    //console.log(date.toUTCString()); //UTC방식으로 변환
+
+//==== 쿠키생성
+    let setCookie = '';
+
+    //setCookie = setCookie + 'CookiName=ABC;';
+    setCookie += 'CookiName=ABC;';
+    setCookie += 'Expires=' + date.toUTCString();
+
+    document.cookie = setCookie; //쿠키생성 
+    console.log(document.cookie);
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
+<!-- 
+**** cookie  ******
+1.정보저장
+  - 웹사이트를 방문시 text 형식으로 저장
+  1) 서버 : cookie, session
+  2) 클라이언트 : cookie
+
+2. cookie 허락 여부 묻는 사이트는 서버에 저장된 것임
+
+3. 만기 - 유지기간
+4. 확인 - 라이브서버로 보기로만 확인 가능
+
+---------확인방법
+크롬-F12-Application => Name, Value, Expires(만기)
+폴더내 숨김파일 보기 후
+=> C:\Users\User\AppData\Local\Google\Chrome\User Data\Default\Cache
+
+------필요한 function
+1. 쿠키생성
+2. 쿠키삭제
+3. 쿠키확인
+
+ -->

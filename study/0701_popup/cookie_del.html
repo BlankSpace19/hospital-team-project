@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>함수 - 쿠키삭제</title>
+  <script>
+    //===쿠키 삭제 =>만기시간을 과거로 되돌리면 가능
+    document.addEventListener('DOMContentLoaded',function(){
+      function delcookie(name){
+        let date = new Date();
+        date.setDate(date.getDate() - 1); //하루전 날로 지정
+
+        let setCookie = '';
+
+        setCookie += name + '=Main;';
+        setCookie += 'Expires=' + date.toUTCString();
+
+        document.cookie = setCookie; //쿠키 설정
+      }
+      document.querySelector('#delcookie').addEventListener('click', function(){
+        delcookie('ABC');
+      });
+    });
+
+
+    /* 
+
+    document.getElementById('delcookie').addEventListener('click', function(){
+      delcookie();
+      alert('쿠키삭제됨');
+    }); */
+  </script>
+</head>
+<body>
+  <button id="delcookie">쿠키 삭제</button>
+
+</body>
+</html>
