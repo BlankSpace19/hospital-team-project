@@ -33,3 +33,59 @@
     display: block;
     margin-top: 10px;
 }
+
+.main-screen__quick-link {
+    margin-top: 32px;
+    height: 160px;
+}
+
+.main-screen__quick-link ul {
+    display: flex;
+    height: 90%;
+    justify-content: space-between;
+}
+
+.main-screen__quick-link li {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-screen__quick-link img,
+.main-screen__quick-link span {
+    display: block;
+}
+
+.main-screen__quick-link img {
+    margin: 0 auto;
+}
+
+.main-screen__quick-link1 span,
+.main-screen__quick-link2 span,
+.main-screen__quick-link3 span,
+.main-screen__quick-link4 span {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.main-screen__quick-link li:last-child {
+    font-size: 14px;
+    color: #aaa;
+}
+
+.main-screen__quick-link strong {
+    display: block;
+}
+
+.main-screen__quick-link .tit1 {
+    font-size: 18px;
+    color: #000;
+}
+
+.main-screen__quick-link .tit2 {
+    font-size: 28px;
+    color: #000;
+    margin: 10px 0;
+}
