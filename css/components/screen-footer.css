@@ -1,0 +1,88 @@
+.screen-footer {
+  padding: 50px 30px 80px;
+  background-color: #2e526b;
+}
+
+.screen-footer__inner-row {
+  display: flex;
+}
+
+.screen-footer__inner__bottom_logo {
+  padding: 0 20px;
+}
+
+.screen-footer__inner__info {
+  padding-left: 40px;
+  padding-right: 30px;
+  border-right: 1px solid #ddd;
+}
+
+.screen-footer__inner__info__footer-link {
+  display: flex;
+  justify-content: space-between;
+}
+
+.screen-footer__inner__info__footer-link li {
+  padding: 0 15px;
+  font-size: 13px;
+  color: #fff;
+  border-right: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.screen-footer__inner__info__footer-link li:last-child {
+  border: none;
+}
+
+.screen-footer__inner__info__copyright {
+  font-size: 12px;
+  color: #fff;
+  margin-left: 15px;
+  line-height: 15px;
+}
+
+.screen-footer__inner__info__etc {
+  margin-top: 15px;
+  margin-left: 30px;
+}
+
+.screen-footer__inner__info__etc input {
+  width: 90px;
+  height: 35px;
+  margin-right: 10px;
+}
+
+.screen-footer__inner__tel-family {
+  padding-left: 50px;
+  width: 320px;
+}
+
+.screen-footer__inner__tel-family::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.screen-footer__inner__tel-num {
+  text-align: center;
+  font-size: 17px;
+  color: #fff;
+}
+
+.screen-footer__inner__tel-num h4 {
+  margin-bottom: 20px;
+}
+
+.screen-footer__inner__tel-num span {
+  font-size: 28px;
+  color: #fff;
+}
+
+.screen-footer__inner__family-site {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  width: 155px;
+  height: 35px;
+  margin-left: 0px;
+}
