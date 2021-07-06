@@ -11,9 +11,12 @@
 /* Components */
 @import "components/screen-header.css";
 @import "components/screen-footer.css";
+@import "components/component-header.css";
 
 /* Screens */
 @import "screens/main.css";
+@import "screens/guide.css";
+@import "screens/center.css";
 
 body {
   color: #333;
@@ -26,6 +29,10 @@ body {
 a,
 a:link {
   text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.6;
 }
 
 .wrap {

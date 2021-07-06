@@ -6,14 +6,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>율제병원</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js" defer></script>
+  <script src="script/script.js" defer></script>
 </head>
 
 <body>
   <div class="wrap">
     <header class="screen-header">
       <div class="screen-header__logo-shortcut">
-        <div class="screen-header__logo"><a href="#"><img src="images/dummy_logo.png" alt="top_logo"></a></div>
+        <div class="screen-header__logo"><a href="#"><img src="images/logo/top_logo.png" alt="top_logo"></a></div>
         <!-- /.screen-header__logo -->
         <div class="screen-header__top-menu-shortcut">
           <ul class="screen-header__top-menu__list">
@@ -33,8 +37,7 @@
       </div>
       <!-- /.screen-header__logo-shortcut -->
       <div class="screen-header__navi">
-        <div class="screen-header__navi__background"></div>
-        <!-- /.screen-header__navi__background -->
+        
         <nav class="screen-header__navi__depth">
           <ul class="screen-header__navi__depth01">
             <li>
@@ -108,6 +111,8 @@
             </li>
           </ul>
           <!-- /.screen-header__navi__depth01 -->
+          <div class="screen-header__navi__background"></div>
+        <!-- /.screen-header__navi__background -->
         </nav>
         <!-- /.screen-header__navi_depth -->
         <div class="screen-header__navi__burger-search">
@@ -123,21 +128,34 @@
       <article class="main-screen__link-slide">
         <div class="main-screen__link">
           <ul>
-            <li><a href="#"><img src="images/dummy_slide_short_img.png" alt="slide_short_img"><span>증명서 발급</span></a>
+            <li><a href="#"><img src="images/slide/slide_icon1_40x40.png" alt="slide_short_img"><span>증명서 발급</span></a>
             </li>
-            <li><a href="#"><img src="images/dummy_slide_short_img.png" alt="slide_short_img"><span>찾아오시는길</span></a>
+            <li><a href="#"><img src="images/slide/slide_icon2_40x40.png" alt="slide_short_img"><span>찾아오시는길</span></a>
             </li>
-            <li><a href="#"><img src="images/dummy_slide_short_img.png" alt="slide_short_img"><span>홍보영상</span></a></li>
-            <li><a href="#"><img src="images/dummy_slide_short_img.png" alt="slide_short_img"><span>전화번호 안내</span></a>
+            <li><a href="#"><img src="images/slide/slide_icon3_40x40.png" alt="slide_short_img"><span>홍보영상</span></a></li>
+            <li><a href="#"><img src="images/slide/slide_icon4_40x40.png" alt="slide_short_img"><span>전화번호 안내</span></a>
             </li>
-            <li><a href="#"><img src="images/dummy_slide_short_img.png" alt="slide_short_img"><span>소식지</span></a></li>
-            <li><a href="#"><img src="images/dummy_slide_short_img.png" alt="slide_short_img"><span>채용공고</span></a></li>
+            <li><a href="#"><img src="images/slide/slide_icon5_40x40.png" alt="slide_short_img"><span>소식지</span></a></li>
+            <li><a href="#"><img src="images/slide/slide_icon6_40x40.png" alt="slide_short_img"><span>채용공고</span></a></li>
           </ul>
         </div>
         <!-- /.main-screen__link -->
 
         <div class="main-screen__slide">
-          <a href="#"><img src="images/dummy_slide.png" alt="slide"></a>
+          <ul class="bxslider">
+            <li>
+              <a href="#"><img src="images/slide/slide_img1.png" alt="slide"></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/slide/slide_img2.png" alt="slide"></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/slide/slide_img3.png" alt="slide"></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/slide/slide_img4.png" alt="slide"></a>
+            </li>
+          </ul>
         </div>
         <!-- /.main-screen__slide -->
       </article>
@@ -145,13 +163,13 @@
 
       <article class="main-screen__quick-link">
         <ul>
-          <li class="main-screen__quick-link1"><a href="#"><img src="images/dummy_quick_link.png"
+          <li class="main-screen__quick-link1"><a href="#"><img src="images/shortcut/contents_shortcut1.png"
                 alt="quick_link"><span>온라인 진료예약</span></a></li>
-          <li class="main-screen__quick-link2"><a href="#"><img src="images/dummy_quick_link.png"
+          <li class="main-screen__quick-link2"><a href="#"><img src="images/shortcut/contents_shortcut2.png"
                 alt="quick_link"><span>진료과&middot;의료진 검색</span></a></li>
-          <li class="main-screen__quick-link3"><a href="#"><img src="images/dummy_quick_link.png"
+          <li class="main-screen__quick-link3"><a href="#"><img src="images/shortcut/contents_shortcut3.png"
                 alt="quick_link"><span>비자(VISA)검진 예약</span></a></li>
-          <li class="main-screen__quick-link4"><a href="#"><img src="images/dummy_quick_link.png"
+          <li class="main-screen__quick-link4"><a href="#"><img src="images/shortcut/contents_shortcut4.png"
                 alt="quick_link"><span>진료예약 조회</span></a></li>
           <li><span><strong class="tit1">전화예약</strong><strong class="tit2">062-860-9698</strong>통화 한번으로
               빠르게<br>예약하세요.</span></li>
@@ -166,19 +184,19 @@
 
           <div class="main-screen__introduce__inner__center-banner">
             <ul>
-              <li><a href="#"><img src="images/dummy_Introduce.png" alt="introduce"></a></li>
-              <li><a href="#"><img src="images/dummy_Introduce.png" alt="introduce"></a></li>
-              <li><a href="#"><img src="images/dummy_Introduce.png" alt="introduce"></a></li>
-              <li><a href="#"><img src="images/dummy_Introduce.png" alt="introduce"></a></li>
+              <li><a href="#"><img src="images/center/center_image1.png" alt="introduce"></a></li>
+              <li><a href="#"><img src="images/center/center_image2.png" alt="introduce"></a></li>
+              <li><a href="#"><img src="images/center/center_image3.png" alt="introduce"></a></li>
+              <li><a href="#"><img src="images/center/center_image4.png" alt="introduce"></a></li>
             </ul>
           </div>
 
           <div class="main-screen__introduce__inner__banner-slide">
             <ul>
-              <li><a href="#"><img src="images/dummy_Introduce.png" alt="introduce"></a></li>
-              <li><a href="#"><img src="images/dummy_Introduce.png" alt="introduce"></a></li>
-              <li><a href="#"><img src="images/dummy_Introduce.png" alt="introduce"></a></li>
-              <li><a href="#"><img src="images/dummy_Introduce.png" alt="introduce"></a></li>
+              <li><a href="#"><img src="images/center/medi_center_img1.png" alt="introduce"></a></li>
+              <li><a href="#"><img src="images/center/medi_center_img2.png" alt="introduce"></a></li>
+              <li><a href="#"><img src="images/center/medi_center_img3.png" alt="introduce"></a></li>
+              <li><a href="#"><img src="images/center/medi_center_img4.png" alt="introduce"></a></li>
             </ul>
           </div>
 
@@ -194,16 +212,16 @@
             <div class="main-screen__issue__inner__contents-row">
               <div class="main-screen__issue__inner__contents__issue-small">
                 <ul>
-                  <li><a href="#"><img src="images/dummy_issue_small.png" alt="issue-small"></a></li>
-                  <li><a href="#"><img src="images/dummy_issue_small.png" alt="issue-small"></a></li>
-                  <li><a href="#"><img src="images/dummy_issue_small.png" alt="issue-small"></a></li>
-                  <li><a href="#"><img src="images/dummy_issue_small.png" alt="issue-small"></a></li>
+                  <li><a href="#"><img src="images/issue/img1_issue.png" alt="issue-small"></a></li>
+                  <li><a href="#"><img src="images/issue/img2_issue.png" alt="issue-small"></a></li>
+                  <li><a href="#"><img src="images/issue/Issue2.png" alt="issue-small"></a></li>
+                  <li><a href="#"><img src="images/issue/Issue3.png" alt="issue-small"></a></li>
                 </ul>
               </div>
               <!-- /.main-screen__issue__inner__contents__issue-small -->
 
               <div class="main-screen__issue__inner__contents__issue-big">
-                <a href="#"><img src="images/dummy_issue_big.png" alt="issue-big"></a>
+                <a href="#"><img src="images/issue/Issue1.png" alt="issue-big"></a>
               </div>
               <!-- /.main-screen__issue__inner__contents__issue-big -->
 
@@ -311,7 +329,7 @@
                     <a class="main-screen__sns__contents__sns-box__inner__more" href="#"><i class="fas fa-plus"></i></a>
                   </h3>
                   <a href="#">
-                    <img class="main-screen__sns__contents__sns-box__inner__thumb" src="images/dummy_sns_thumb.png" alt="sns_thumb">
+                    <img class="main-screen__sns__contents__sns-box__inner__thumb" src="images/sns/sns1.jpg" alt="sns_thumb">
                     <img class="main-screen__sns__contents__sns-box__inner__icon" src="images/youtube.png" alt="youtube">
                   </a>
                   <a href="#"><span>Lorem ipsum dolor sit.</span></a>
@@ -324,7 +342,7 @@
                     <a class="main-screen__sns__contents__sns-box__inner__more" href="#"><i class="fas fa-plus"></i></a>
                   </h3>
                   <a href="#">
-                    <img class="main-screen__sns__contents__sns-box__inner__thumb" src="images/dummy_sns_thumb.png" alt="sns_thumb">
+                    <img class="main-screen__sns__contents__sns-box__inner__thumb" src="images/sns/sns2.jpg" alt="sns_thumb">
                     <img class="main-screen__sns__contents__sns-box__inner__icon" src="images/facebook.png" alt="facebook">
                   </a>
                   <a href="#"><span>Lorem ipsum dolor sit.</span></a>
@@ -337,7 +355,7 @@
                     <a class="main-screen__sns__contents__sns-box__inner__more" href="#"><i class="fas fa-plus"></i></a>
                   </h3>
                   <a href="#">
-                    <img class="main-screen__sns__contents__sns-box__inner__thumb" src="images/dummy_sns_thumb.png" alt="sns_thumb">
+                    <img class="main-screen__sns__contents__sns-box__inner__thumb" src="images/sns/sns3.jpg" alt="sns_thumb">
                     <img class="main-screen__sns__contents__sns-box__inner__icon" src="images/instagram.png" alt="instagram">
                   </a>
                   <a href="#"><span>Lorem ipsum dolor sit.</span></a>
@@ -350,7 +368,7 @@
                     <a class="main-screen__sns__contents__sns-box__inner__more" href="#"><i class="fas fa-plus"></i></a>
                   </h3>
                   <a href="#">
-                    <img class="main-screen__sns__contents__sns-box__inner__thumb" src="images/dummy_sns_thumb.png" alt="sns_thumb">
+                    <img class="main-screen__sns__contents__sns-box__inner__thumb" src="images/sns/sns4.jpg" alt="sns_thumb">
                     <img class="main-screen__sns__contents__sns-box__inner__icon" src="images/twitter.png" alt="twitter">
                   </a>
                   <a href="#"><span>Lorem ipsum dolor sit.</span></a>
@@ -372,7 +390,7 @@
               <h2 class="main-screen__contact__inner__contents__text__title">오시는 길</h2>
               <ul class="main-screen__contact__inner__contents__text__add">
                 <li><strong>주&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;소</strong><span>광주광역시 서구 시청로96번길 12 율제병원</span></li>
-                <li><strong>전&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;화</strong><span>062-373-3377</span></li>
+                <li><strong>전&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;화</strong><span>062-860-9698</span></li>
                 <li><strong>문&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;자</strong><span>010-8609-6948</span></li>
                 <li><strong>카카오플러스친구</strong><span>@율제병원플러스친구</span></li>
                 <li><strong>진료시간</strong><span>평일 : 오전 9시 ~ 오후 6시</span><span
@@ -404,7 +422,7 @@
       <div class="screen-footer__inner">
         <div class="screen-footer__inner-row">
           <div class="screen-footer__inner__bottom_logo">
-            <img src="images/dummy_bottom_logo.png" alt="bottom_logo">
+            <img src="images/logo/sub_logo.png" alt="bottom_logo">
           </div>
 
           <div class="screen-footer__inner__info">
@@ -427,10 +445,15 @@
           <div class="screen-footer__inner__tel-family">
             <div class="screen-footer__inner__tel-num">
               <h4>대표전화(안내)</h4>
-              <span>051-797-0100</span>
+              <span>062-860-9698</span>
             </div>
             <div class="screen-footer__inner__family-site">
-              <input type="button" value="패밀리사이트">
+              <select name="familySite" id="family-site">
+                <option>패밀리사이트1</option>
+                <option>패밀리사이트2</option>
+                <option>패밀리사이트3</option>
+            </select>
+            <input type="button" value="이동" id="moveSite">
             </div>
           </div>
 

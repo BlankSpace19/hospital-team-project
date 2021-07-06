@@ -1,5 +1,6 @@
 .screen-footer {
-  padding: 50px 30px 80px;
+  margin-top: 10px;
+  padding: 50px 30px 70px;
   background-color: #2e526b;
 }
 
@@ -9,6 +10,11 @@
 
 .screen-footer__inner__bottom_logo {
   padding: 0 20px;
+}
+
+.screen-footer__inner__bottom_logo img {
+  width: 120px;
+  height: 100px;
 }
 
 .screen-footer__inner__info {
@@ -84,5 +90,13 @@
   margin-top: 30px;
   width: 155px;
   height: 35px;
-  margin-left: 0px;
+  padding-left: 80px;
+}
+
+.screen-footer__inner__family-site select {
+  padding: 0 5px;
+}
+
+.screen-footer__inner__family-site input {
+  margin-left: 10px;
 }
