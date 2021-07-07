@@ -13,7 +13,7 @@
 }
 
 .screen-header__logo img {
-    width: 300px;
+    width: 220px;
     height: 50px;
 }
 
@@ -64,11 +64,16 @@
     color: #1e96eb;
 }
 
+.screen-header__navi__depth01 {
+    font-weight: 600;
+}
+
 .screen-header__navi__depth02 {
     display: none;
     position: absolute;
     line-height: 30px;
     z-index: 1100;
+    font-weight: normal;
 }
 
 

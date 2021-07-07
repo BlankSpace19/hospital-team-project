@@ -17,7 +17,7 @@
   <div class="wrap">
     <header class="screen-header">
       <div class="screen-header__logo-shortcut">
-        <div class="screen-header__logo"><a href="#"><img src="images/logo/top_logo.png" alt="top_logo"></a></div>
+        <div class="screen-header__logo"><a class="top-logo" href="#"><img src="images/logo/top_logo.png" alt="top_logo"></a></div>
         <!-- /.screen-header__logo -->
         <div class="screen-header__top-menu-shortcut">
           <ul class="screen-header__top-menu__list">
@@ -156,7 +156,27 @@
                 </div>
             </div>
             <div class="guide-screen__inner__right">
-                <div class="guide-screen__inner__right__inner"></div>
+                <div class="guide-screen__inner__right__inner">
+                  <div class="guide-screen__inner__right__inner__reservation">
+                    <div class="guide-screen__inner__right__inner__reservation__column">
+                      <h3>의료진 예약</h3>
+                      <span>의료진 정보를 살펴보고<br>예약하시겠어요?</span>
+                      <input type="button" value="의료진 검색">
+                    </div>
+                    <div class="guide-screen__inner__right__inner__reservation__column">
+                      <h3>진료과 예약</h3>
+                      <span>의료진 정보를 살펴보고<br>예약하시겠어요?</span>
+                      <input type="button" value="진료과 검색">
+                    </div>
+                    <div class="guide-screen__inner__right__inner__reservation__column">
+                      <h3>전화 진료예약</h3>
+                      <strong>062-373-3373</strong>
+                      <span>상담시간</span>
+                      <span>평일&nbsp;&nbsp;09:00부터 17:00 까지</span>
+                    </div>
+                  </div>
+                  
+                </div>
             </div>
         </div>
     </main>
@@ -180,9 +200,7 @@
               <span>copyright &copy; 2021 yul-je hospital. all rights reserved.</span>
             </div>
             <div class="screen-footer__inner__info__etc">
-              <input type="button" value="">
-              <input type="button" value="">
-              <input type="button" value="">
+              <img src="images/Certification-Mark.png" alt="info_ect">
             </div>
           </div>
 
@@ -193,9 +211,13 @@
             </div>
             <div class="screen-footer__inner__family-site">
                 <select name="familySite" id="family-site">
-                    <option>패밀리사이트1</option>
-                    <option>패밀리사이트2</option>
-                    <option>패밀리사이트3</option>
+                  <option>광주율제병원</option>
+                  <option>서울율제병원</option>
+                  <option>부산율제병원</option>
+                  <option>인천율제병원</option>
+                  <option>대전율제병원</option>
+                  <option>제주율제병원</option>
+                  <option>율제대학교의원</option>
                 </select>
                 <input type="button" value="이동" id="moveSite">
             </div>
@@ -203,24 +225,29 @@
 
         </div>
 
-        <!-- <div class="screen-footer__footer-fix">
-          <div class="screen-footer__footer-fix__inner">
-            <ul class="screen-footer__footer-fix__inner__menu">
-              <li><a href="#">진료예약</a></li>
-              <li><a href="#">진료시간표</a></li>
-              <li><a href="#">진료과</a></li>
-              <li><a href="#">전문진료센터</a></li>
-              <li><a href="#">전문클리닉</a></li>
-              <li><a href="#">전화번호안내</a></li>
-              <li><a href="#">찾아오시는길</a></li>
-            </ul>
-            <a href="#">home</a>
-            <input type="button" value="top">
-          </div>
-        </div> -->
+        
       </div>
     </footer>
     <!-- /.screen-footer -->
+  </div>
+  <div class="screen-footer__footer-fix">
+    <div class="screen-footer__footer-fix__inner">
+      <ul class="screen-footer__footer-fix__inner__menu">
+        <li><a href="#"><img src="images/bottom_nav/bottom_nav_icon1_22x22.png" alt="date">진료예약</a></li>
+        <li><a href="#"><img src="images/bottom_nav/bottom_nav_icon2_22x22.png" alt="scadule">진료시간표</a></li>
+        <li><a href="#"><img src="images/bottom_nav/bottom_nav_icon3_22x22.png" alt="department">진료과</a></li>
+        <li><a href="#"><img src="images/bottom_nav/bottom_nav_icon4_22x22.png" alt="center">전문진료센터</a></li>
+        <li><a href="#"><img src="images/bottom_nav/bottom_nav_icon5_22x22.png" alt="clinic">전문클리닉</a></li>
+        <li><a href="#"><img src="images/bottom_nav/bottom_nav_icon6_22x22.png" alt="phone-number">전화번호안내</a></li>
+        <li><a href="#"><img src="images/bottom_nav/bottom_nav_icon7_22x22.png" alt="directions">찾아오시는길</a></li>
+      </ul>
+      <div class="screen-footer__footer-fix__inner__home-top">
+        <ul>
+          <li><a href="#">home</a></li>
+          <li><a href="#">top</a></li>
+        </ul>
+      </div>
+    </div>
   </div>
 
   <script src="https://kit.fontawesome.com/f991a171c3.js" crossorigin="anonymous"></script>

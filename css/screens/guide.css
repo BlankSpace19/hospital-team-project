@@ -1,3 +1,11 @@
+.guide-screen {
+    margin-top: 10px;
+}
+
+.guide-screen__inner {
+    display: flex;
+}
+
 .guide-screen__inner__left {
     width: 20%;
 }
@@ -20,8 +28,16 @@
 .guide-screen__inner__left__inner li {
     border-bottom: 1px solid #333;
     padding-left: 10px;
+    font-size: 19px;
+    line-height: 30px;
 }
 
 .guide-screen__inner__right {
     width: 80%;
+    padding: 20px;
+    margin-bottom: 100px;
+}
+
+.guide-screen__inner__right__inner__reservation {
+    display: flex;
 }
