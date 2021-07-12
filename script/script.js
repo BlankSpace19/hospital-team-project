@@ -24,3 +24,77 @@ $(function(){
     });
     
 });
+
+ //3. modal
+ $(function(){
+ 
+  $('#close').click(function(){
+$('#modal').hide(); //닫기
+});
+});
+let myPopup = document.querySelector('.popup'),
+    checkbox = document.querySelector('#popup'),
+    popupClose = document.querySelector('.close');
+
+//쿠키생성
+function setCookie(name, value, day){
+  let date = new Date();
+  date.setDate(date.getDate() + day); //하루전 날로 지정
+
+  let mycookie = '';
+  //setCookie += 'CookiName=ABC;';
+  mycookie += name + '='+ value + ';';
+  mycookie += 'Expires=' + date.toUTCString();
+
+  document.cookie = mycookie; //쿠키 설정
+}
+
+//쿠키삭제
+function delcookie(name){
+  let date = new Date();
+  date.setDate(date.getDate() - 1); //하루전 날로 지정
+
+  let setCookie = '';
+
+  setCookie += name + '=Main;';
+  setCookie += 'Expires=' + date.toUTCString();
+
+  document.cookie = setCookie; //쿠키 설정
+}
+
+//쿠키확인
+function checkCookie(name){
+ let cookies = document.cookie.split(';');
+ console.log(cookies); 
+ let visited = false;
+
+  for(var i in cookies){
+    if(cookies[i].indexOf(name) > -1){ //방문한적이 있다
+      //alert('다시 방문해주셔서 감사합니다.');
+      visited = true;
+    }
+  }
+
+  //if(visited == true)
+  if(visited){
+    //참->재방문
+    myPopup.style.display = 'none';
+  }else{
+    //거짓->신규방문
+    myPopup.style.display = 'block';
+  }
+} 
+checkCookie('CCC');
+
+popupClose.addEventListener('click', function(){
+//a.checked => ture /false
+  if(checkbox.checked){
+    //팝업을 다시 안보겠다. 팝업닫고, 쿠키 생성
+    setCookie('CCC', 'Main', 1);
+    myPopup.style.display = 'none';
+  }else{
+    //팝업을 계속 보겠다. 팝업닫고, 쿠키 삭제
+    delcookie('CCC');
+    myPopup.style.display = 'none';
+  }
+});

@@ -19,7 +19,7 @@
 
 .component-header__inner__center p {
     font-size: 14px;
-    color: #ddd;
+    color: #777;
     margin-top: 15px;
 }
 
@@ -49,6 +49,6 @@
 .component-header__inner__right__link span {
     display: block;
     font-size: 13px;
-    color: #ddd;
+    color: #777;
     margin-top: 5px;
 }
